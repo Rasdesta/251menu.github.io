@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/251menu/css/styles.css" rel="stylesheet"/>
+    <title>251menu</title>
+  </head>
+  <body>
+   <header class="main-header">
+     <div class="topnav"> 
+      <a class="active" href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">Admin</a>
+     </div>
+     <div class="header-container">
+       <div class="header-top">
+         <div class="header"> 
+            <h1 class="header-title">251 Menu</h1>
+           <h2 class="header-title2">Menus from around Addis.</h2>
+            <form action="#" name="deliveryareaform" id="ideliveryareaform"  method="post" class="formstyle">
+             <input type="hidden" name="searchstring" id="isearchstring" value>
+             <input type="hidden" name="type" value>
+             <div class="deliveryareapanel clear">
+               <div class="lp"> <!--flex-->
+                 <div class="lp_container inputs">
+                   <label for="imysearchstring">
+                    <span class="wai_sceenreader"> Fill out location or
+                    restaurant names:</span>
+                   </label>
+                   <input autocomplete="off" class="lp_input active autocomp
+                   letesearch nofocus outer location-panel-search-input" id=
+                   "imysearchstring" maxlength="100" name="mysearchstring" 
+                   placeholder="Adresse, Piassa" type="text" value>
+                   <div id="geolocationnotice"></div>
+                   <div class="deliveryareaerror" id="ideliveryareaerror" style="display: none">
+                    <a href="#" id="notificationclose" class="close closebtnicon" onclick="$(this).parent();return false;">
+                     <span class="fa-stack">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+                     </span>
+                   </a>
+                   <div class="marker"></div>
+                   "The specified delivery range does not exist or is invalid. Check your input and try again."
+                 </div>
+                 <div id="mapdummy"></div>
+                 <div class="lp_input-close" onclick="app.components.locationPanel.UI.deleteValAndClosePopup()">
+                   <i class="icon-ta-close-v2"></i>
+                 </div>
+                </div>
+                <a class="lp_search-button extralargebutton" href="#" id="submit_deliveryarea" title="View restaurants">View</a>
+                <div class="lp_places-container autoCompleteDropDown">
+                 <div class="suggestions"> Did you mean? </div>
+                 <div class="auto-complete-drop-down-content" id="iautocompleteDropDownContent"></div> <!--flex--> 
+                </div>
+             </div>
+             <script type="text/javascript"></script>
+           </form>
+         </div>  
+        </div>
+        <div class="subheader">
+          <div class="subheader_slope"></div>
+          <div class="js-random-class subheader_image subheader_image--Burger-fast-food-wallpaper" data-
+          classes="subheader_image--pizza,subheader_image--pizza-light,subheader_image--
+          hamburger,subheader_image--sushi,subheader_image--variety"></div>
+        </div>
+      </div>
+    </header>
+ </body>
+</html>
